@@ -29,4 +29,15 @@ public class LinkedList {
         node.node=n;
         head = node;
     }
+    public void insertAt(int index,int data){
+        Node node = new Node(data);
+        node.node=null;
+        Node n = head;
+
+        for (int i =0;i<index-1;i++){
+            n = n.node;
+        }
+        node.node = n.node;
+        n.node =node;
+    }
 }
