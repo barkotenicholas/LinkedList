@@ -33,7 +33,9 @@ public class LinkedList {
         Node node = new Node(data);
         node.node=null;
         Node n = head;
-
+        if(index == 0 ){
+            insertAtStart(data);
+        }
         for (int i =0;i<index-1;i++){
             n = n.node;
         }
