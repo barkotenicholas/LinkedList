@@ -23,4 +23,10 @@ public class LinkedList {
         }
         System.out.println(n.data);
     }
+    public void insertAtStart( int data){
+        Node n = head;
+        Node node = new Node(data);
+        node.node=n;
+        head = node;
+    }
 }
